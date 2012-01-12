@@ -29,19 +29,19 @@ all: compile eunit test doc
 check: compile dialyzer
 
 compile:
-	rebar compile
+	./rebar compile
 
 
 clean:
-	rebar clean
+	./rebar clean
 
 eunit:
-	rebar eunit
+	./rebar eunit
 
 test: eunit
 
 doc:
-	rebar doc
+	./rebar doc
 
 dialyzer:
-	rebar skip_deps=true dialyze
+	./rebar skip_deps=true dialyze
